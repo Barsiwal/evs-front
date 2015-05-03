@@ -287,7 +287,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="calculator.html">
+                        <a href="getimages.php">
                             <p>Carbon Footprint Calculator</p>
                         </a>
                     </li>
@@ -573,14 +573,14 @@
               {
                 var origins = response.originAddresses;
                 var destinations = response.destinationAddresses;
-              var outputDiv = document.getElementById('outputDiv1');
-               outputDiv.innerHTML = '';
+          //    var outputDiv = document.getElementById('outputDiv1');
+          //     outputDiv.innerHTML = '';
 
                 for (var i = 0; i < origins.length; i++) {
                   var results = response.rows[i].elements;
                   for (var j = 0; j < results.length; j++) {
-                 outputDiv.innerHTML += results[j].distance.text + ' in '
-                      + results[j].duration.text + '<br>';
+          //       outputDiv.innerHTML += results[j].distance.text + ' in '
+                 //     + results[j].duration.text + '<br>';
 
                      //  distance[2] = parseInt(results[j].distance.text);
 
@@ -619,14 +619,14 @@
               } else {
                 var origins = response.originAddresses;
                 var destinations = response.destinationAddresses;
-                var outputDiv = document.getElementById('outputDiv');
-                outputDiv.innerHTML = '';
+        //        var outputDiv = document.getElementById('outputDiv');
+          //      outputDiv.innerHTML = '';
 
                 for (var i = 0; i < origins.length; i++) {
                   var results = response.rows[i].elements;
                   for (var j = 0; j < results.length; j++) {
-                   outputDiv.innerHTML += results[j].distance.text + ' in '
-                        + results[j].duration.text + '<br>';
+               //    outputDiv.innerHTML += results[j].distance.text + ' in '
+                   //     + results[j].duration.text + '<br>';
 
                         var distance_bus = parseInt(results[j].distance.text);
                       <?php if ($person_empty == 1 ){
@@ -881,10 +881,12 @@
            }
         </script>
 
-       metro/train : <div id= "outputDiv1"></div>
-        bus : <div id= "outputDiv"></div>
+  <!--     metro/train : <div id= "outputDiv1"></div>
+        bus : <div id= "outputDiv"></div>-->
+                        <div class="app-map">
         <div id="directions-panel"></div>
         <div id="map-canvas"></div>
+                            </div>
         <table id="myTable" class="table table-bordered table-hover table-striped">
   <tr>
     <td>Mode</td>
@@ -929,10 +931,10 @@
             </section>
             <footer>
                 <p>
-                    &copy;Karan Barsiwal 2014
+                    &copy;Green-Gen 2015
                 </p>
                 <p>
-                    Web Developer
+
                 </p>
 
 

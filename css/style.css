@@ -869,4 +869,11 @@ footer {
 .hide1.retract1 {
   height: 248px; }
 
+.cssedit iframe {
+  display: block;
+  margin: 0 auto; }
+
+.cssedit2 {
+  padding-left: 11vw; }
+
 /*# sourceMappingURL=style.css.map */

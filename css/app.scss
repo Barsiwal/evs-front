@@ -1,7 +1,7 @@
 .inner-container {
     section {
         padding: 5vh 0;
-        .app-1 {
+        .app {
             width: 80%;
             margin: 0 auto;
             .app-inner {
@@ -29,49 +29,22 @@
     }
 }
 #map-canvas {
-        height: 100%;
+        height: 50vh;
         margin: 0px;
-        padding: 0px
-      }
-      #panel {
-        position: absolute;
-        top: 5px;
-        left: 50%;
-        margin-left: -180px;
-        z-index: 5;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #999;
+        padding: 0px;
+        width:69%;
       }
       #directions-panel {
-        height: 100%;
+        height:50vh;
         float: right;
-        width: 390px;
+        width: 30%;
         overflow: auto;
       }
 
-      #map-canvas {
-        margin-right: 400px;
-      }
-
-      #control {
-        background: #fff;
-        padding: 5px;
-        font-size: 14px;
-        font-family: Arial;
-        border: 1px solid #ccc;
-        box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
-        display: none;
-      }
-
-      @media print {
-        #map-canvas {
-          height: 500px;
-          margin: 0;
-        }
-
-        #directions-panel {
-          float: none;
-          width: auto;
-        }
-      }
+.map-app{
+    display: flex;
+    justify-content: space-around;
+}
+#myTable{
+    margin-top: 5vh;
+}
