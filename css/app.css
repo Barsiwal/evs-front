@@ -3,6 +3,14 @@
   .inner-container section .app {
     width: 80%;
     margin: 0 auto; }
+    .inner-container section .app .one {
+      font-size: 3em;
+      font-family: 'Open Sans Condensed', sans-serif;
+      letter-spacing: .5vw;
+      font-weight: 600; }
+    .inner-container section .app .two {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 1.4em; }
     .inner-container section .app .app-inner {
       width: 100%;
       display: flex;
