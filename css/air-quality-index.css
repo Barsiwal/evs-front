@@ -8,5 +8,10 @@ header {
 
 .logo {
   fill: #fff; }
+.cssedit iframe {
+    display: block;
+    margin: 0 auto;
+}
+
 
 /*# sourceMappingURL=air-quality-index.css.map */

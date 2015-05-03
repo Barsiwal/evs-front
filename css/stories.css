@@ -9,4 +9,9 @@ header {
 .logo {
   fill: #fff; }
 
+.cssedit iframe {
+    display: block;
+    margin: 0 auto;
+}
+
 /*# sourceMappingURL=stories.css.map */
