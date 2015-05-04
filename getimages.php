@@ -834,16 +834,7 @@
                 var start = "<?php echo $ords; ?>";
                 var end = "<?php echo $words; ?>";;
                 var request = {
-                    origin: start, destination: end, travelMode: google.maps.TravelMode.DRIVING/*<?php
-                    if ($ds == 0) echo $rds; else echo "TRANSIT" ?>
-                    <?php
-                    if ($ds == 1) echo
-                    ",
-                    transitOptions: {
-                    modes: [google.maps.TransitMode.$rds],
-                    routingPreference: google.maps.TransitRoutePreference.FEWER_TRANSFERS
-                      }"
-                      ?>*/
+                    origin: start, destination: end, travelMode: google.maps.TravelMode.DRIVING
                   };
                 directionsService.route(request, function(response, status) {
                 if (status == google.maps.DirectionsStatus.OK)
